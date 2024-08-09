@@ -1,0 +1,76 @@
+<div [ngClass]="{ 'dark-mode': isDarkMode, 'light-mode': !isDarkMode }">
+   
+    <div class="calculator">
+       
+      <div class="display">
+        <div class="mode-toggle">
+            <button (click)="toggleMode()">☼ / ☾</button>
+            
+            
+            
+            <button (click)="toggleHistory()" class="history-toggle">
+                <img src="/assets/images/history.png" alt="Geçmişi Göster" height="18" width="20">
+              </button>
+          
+              <div class="history" *ngIf="showHistory"> <!-- Bu alan sadece showHistory true ise görünür -->
+                
+                <div *ngFor="let item of history">
+                  <p>{{ item.input }} = {{ item.result }}</p>
+                </div>
+              </div>
+
+            </div>
+            
+        <div class="input">{{ input }}</div>
+        <div class="result">{{ result }}</div>
+      </div>
+
+      <div class="keyboard">
+      <div class="row"> 
+        <button (click)="clear()">AC</button>
+        <button (click)="toggleMode()">-/+</button>
+        <button (click)="pressOperator('%')">%</button>
+    </div>
+
+      <div class="buttons">
+        
+        <div style="display: flex; flex-direction: row">
+        <div class="column">
+            <button (click)="pressNum('1')">1</button>
+            <button (click)="pressNum('4')">4</button>
+            <button (click)="pressNum('7')">7</button>
+            <button (click)="pressNum('.')">.</button>
+        </div>
+       
+        <div class="column">
+            <button (click)="pressNum('2')">2</button>
+            <button (click)="pressNum('5')">5</button>
+            <button (click)="pressNum('8')">8</button>
+            <button (click)="pressNum('0')">0</button>
+        </div>
+
+        <div class="column">
+            <button (click)="pressNum('3')">3</button>
+            <button (click)="pressNum('6')">6</button>
+            <button (click)="pressNum('9')">9</button>
+            <button (click)="pressNum('0')">00</button>
+        </div>
+        
+        
+
+        <div class="operator">
+            <button (click)="pressOperator('/')">/</button>
+            <button (click)="pressOperator('*')">×</button>
+            <button (click)="pressOperator('-')">-</button>
+            <button (click)="pressOperator('+')">+</button>
+            <button (click)="calculate()">=</button>
+        </div>
+
+    </div>
+    </div>
+
+    </div>
+      
+    </div>
+  </div>
+  
