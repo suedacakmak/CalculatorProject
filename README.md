@@ -12,9 +12,9 @@ This is a simple Angular calculator application that supports basic arithmetic o
 ## Screenshots
 
 ![Light Mode]
-(https://github.com/suedacakmak/CalculatorProject/blob/main/src/assets/images/light_mode_screenshot.png)
+(./src/assets/images/light_mode_screenshot.png)
 ![Dark Mode]
-(https://github.com/suedacakmak/CalculatorProject/blob/main/src/assets/images/dark_mode_screenshot.png)
+(./src/assets/images/dark_mode_screenshot.png)
 
 ## Installation
 
