@@ -12,7 +12,7 @@ This is a simple Angular calculator application that supports basic arithmetic o
 ## Screenshots
 
 ![Light Mode](C:\Users\sueda\CalculatorApp\src\assets\images\light_mode_screenshot.png)
-![Dark Mode](C:\Users\sueda\CalculatorApp\src\assets\images\dark_mode_screenshot.png
+![Dark Mode](C:\Users\sueda\CalculatorApp\src\assets\images\dark_mode_screenshot.png)
 
 ## Installation
 
