@@ -1,27 +1,62 @@
-# CalculatorApp
+# Angular Calculator App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.2.13.
+This is a simple Angular calculator application that supports basic arithmetic operations. The application also includes a dark mode feature and a history toggle button with icons that change based on the mode.
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Basic Arithmetic Operations:** Addition, subtraction, multiplication, and division.
+- **Dark Mode:** Toggle between light and dark mode for better visibility.
+- **History Feature:** View the history of calculations, which can be toggled on and off using an icon.
+- **Responsive Design:** The calculator is responsive and works well on different screen sizes.
 
-## Code scaffolding
+## Screenshots
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+![Light Mode](C:\Users\sueda\CalculatorApp\src\assets\images\light_mode_screenshot.png)
+![Dark Mode](C:\Users\sueda\CalculatorApp\src\assets\images\dark_mode_screenshot.png
 
-## Build
+## Installation
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+To run this project locally, follow these steps:
 
-## Running unit tests
+1. **Clone the repository:**
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+    ```bash
+    git clone https://github.com/your-username/your-repository-name.git
+    cd your-repository-name
+    ```
 
-## Running end-to-end tests
+2. **Install the dependencies:**
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+    Make sure you have [Node.js](https://nodejs.org/) installed.
 
-## Further help
+    ```bash
+    npm install
+    ```
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+3. **Run the application:**
+
+    ```bash
+    ng serve
+    ```
+
+4. **Open the application in your browser:**
+
+    Navigate to `http://localhost:4200/` in your web browser.
+
+## Project Structure
+
+- `src/app/calculator/calculator.component.ts`: The main component for the calculator logic.
+- `src/app/calculator/calculator.component.html`: The template file for the calculator UI.
+- `src/app/calculator/calculator.component.css`: The styles for the calculator.
+
+## Customization
+
+### Modifying Styles
+
+You can customize the look and feel of the calculator by editing the `calculator.component.css` file.
+
+## Contributing
+
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
+
+
