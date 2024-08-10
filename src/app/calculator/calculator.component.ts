@@ -36,7 +36,7 @@ export class CalculatorComponent {
     }
 
     // Eğer input zaten bir operatörle bitiyorsa, aynı operatörü tekrar eklemeyin
-    if (['+', '-', '*', '/'].includes(this.input.trim().slice(-1))) {
+    if (['+', '-', '*', '/','%'].includes(this.input.trim().slice(-1))) {
       return;
     }
 
@@ -69,4 +69,5 @@ export class CalculatorComponent {
       this.input = '-' + this.input;
     }
   }
+
 }
