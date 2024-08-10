@@ -30,7 +30,18 @@ export class CalculatorComponent {
   }
   
   pressOperator(op: string) {
+    // Eğer input boş veya sadece boşluksa, operatör eklemeyin
+    if (this.input === '' || this.input === '0') {
+      return; // Eğer input alanı boşsa veya sadece "0" ise işlem yapılmaz
+    }
+
+    // Eğer input zaten bir operatörle bitiyorsa, aynı operatörü tekrar eklemeyin
+    if (['+', '-', '*', '/'].includes(this.input.trim().slice(-1))) {
+      return;
+    }
+
     this.input += ' ' + op + ' ';
+    this.result = '';
   }
 
   calculate() {
@@ -46,7 +57,16 @@ export class CalculatorComponent {
   }
 
   clear() {
-    this.input = '';
-    this.result = '';
+    this.input = '0'; // Temizleme sonrası "0" olarak ayarlıyoruz
+    this.result = '='; // Eşittir simgesi olarak ayarlıyoruz
+  }
+
+  toggleSign() {
+    // Eğer input sayısı negatifse pozitif yap, pozitifse negatif yap
+    if (this.input.startsWith('-')) {
+      this.input = this.input.substring(1);
+    } else {
+      this.input = '-' + this.input;
+    }
   }
 }
