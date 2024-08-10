@@ -8,26 +8,27 @@
     color: #ffffff;
   }
   .light-mode .display {
-    background-color: #ffffff; /* Karanlık mod için arka plan rengi */
-    color: #000000; /* Karanlık mod için yazı rengi */
+    background-color: #ffffff; 
+    color: #000000; 
   }
   
   .dark-mode .display {
-    background-color: rgb(27, 28, 31); /* Karanlık mod için arka plan rengi */
-    color: #fff; /* Karanlık mod için yazı rengi */
+    background-color: rgb(27, 28, 31); 
+    color: #fff; 
   }
 
   .dark-mode .keyboard {
-    background-color: rgb(19, 59, 91); /* Karanlık mod için arka plan rengi */
-    color: #fff; /* Karanlık mod için yazı rengi */
+    background-color: rgb(19, 59, 91); 
+    color: #fff; 
   }
 
   .dark-mode .operator{
     height: 410px;
     width: 70px;
-    margin-top: -96px;
-    margin-left: 7px;
+    margin-top: -82px;
+    margin-left: 9px;
     border-radius: 30px;
+    background-color: rgb(15, 36, 50);
   }
 
   .dark-mode .operator button{
@@ -222,9 +223,10 @@
   .operator{
     height: 410px;
     width: 70px;
-    margin-top: -96px;
-    margin-left: 7px;
+    margin-top: -82px;
+    margin-left: 9px;
     border-radius: 30px;
+    background-color: rgb(205, 228, 249);
   }
 
   .operator button{

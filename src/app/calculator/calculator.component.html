@@ -12,7 +12,7 @@
                 <img src="/assets/images/history.png" alt="Geçmişi Göster" height="18" width="20">
               </button>
           
-              <div class="history" *ngIf="showHistory"> <!-- Bu alan sadece showHistory true ise görünür -->
+              <div class="history" *ngIf="showHistory"> 
                 
                 <div *ngFor="let item of history">
                   <p>{{ item.input }} = {{ item.result }}</p>

@@ -17,25 +17,25 @@ export class CalculatorComponent {
   }
 
   toggleHistory() {
-    this.showHistory = !this.showHistory;  // Geçmişi göster/gizle
+    this.showHistory = !this.showHistory;  
   }
 
   pressNum(num: string) {
     if (this.input === '0') {
-      this.input = num; // Eğer input "0" ise, girilen değer ile değiştir
+      this.input = num; 
     } else {
-      this.input += num; // Aksi halde mevcut input değerine ekle
+      this.input += num; 
     }
-    this.result = ''; // Yeni bir sayı girildiğinde result'ı temizle
+    this.result = ''; 
   }
   
   pressOperator(op: string) {
-    // Eğer input boş veya sadece boşluksa, operatör eklemeyin
+   
     if (this.input === '' || this.input === '0') {
-      return; // Eğer input alanı boşsa veya sadece "0" ise işlem yapılmaz
+      return; 
     }
 
-    // Eğer input zaten bir operatörle bitiyorsa, aynı operatörü tekrar eklemeyin
+    
     if (['+', '-', '*', '/','%'].includes(this.input.trim().slice(-1))) {
       return;
     }
@@ -57,12 +57,12 @@ export class CalculatorComponent {
   }
 
   clear() {
-    this.input = '0'; // Temizleme sonrası "0" olarak ayarlıyoruz
-    this.result = '='; // Eşittir simgesi olarak ayarlıyoruz
+    this.input = '0'; 
+    this.result = '='; 
   }
 
   toggleSign() {
-    // Eğer input sayısı negatifse pozitif yap, pozitifse negatif yap
+    
     if (this.input.startsWith('-')) {
       this.input = this.input.substring(1);
     } else {
