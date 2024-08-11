@@ -13,11 +13,11 @@ This is a simple Angular calculator application that supports basic arithmetic o
 
 ![Light Mode]
 
-![Ekran görüntüsü 2024-08-10 021315](https://github.com/user-attachments/assets/67056e22-798c-434f-a5be-4db7da72ebb5)
+![Ekran görüntüsü 2024-08-10 021315](https://github.com/user-attachments/assets/437663fe-9fa8-4d8c-beff-aea39999658c)
 
 ![Dark Mode]
 
-![Ekran görüntüsü 2024-08-10 021512](https://github.com/user-attachments/assets/93443967-d297-4192-b37b-34277e3008c5)
+![Ekran görüntüsü 2024-08-10 021512](https://github.com/user-attachments/assets/76922775-fc5f-4bb3-9e57-93cc5853abc8)
 
 ## Installation
 
