@@ -11,7 +11,7 @@ This is a simple Angular calculator application that supports basic arithmetic o
 
 ## Screenshots
 
-![Light Mode]------------------------------------![Dark Mode]
+[Light Mode]                                     [Dark Mode]
 
 ![Ekran görüntüsü 2024-08-10 021315](https://github.com/user-attachments/assets/437663fe-9fa8-4d8c-beff-aea39999658c) ![Ekran görüntüsü 2024-08-10 021512](https://github.com/user-attachments/assets/76922775-fc5f-4bb3-9e57-93cc5853abc8)
 
